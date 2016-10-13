@@ -2,7 +2,6 @@ package com.capgemini.dbt.common.context;
 
 /**
  * This class is used to store the user profile and can be fetched in subsequent user requests after logging in
- * @author isgn
  *
  */
 public class ThreadLocalContext {
