@@ -27,7 +27,7 @@ import org.glassfish.jersey.server.validation.internal.InjectingConstraintValida
 @ApplicationPath("webapi")
 public class DigitalBankingApplication extends ResourceConfig {
     public DigitalBankingApplication() {
-    	System.out.println("In DigitalBankingApplication");
+    	System.out.println("In DigitalBankingApplication v1.1");
         Map<String, Object> properties = new HashMap<String, Object>();
         properties.put(ServerProperties.BV_SEND_ERROR_IN_RESPONSE, true);
         properties.put(ServerProperties.BV_DISABLE_VALIDATE_ON_EXECUTABLE_OVERRIDE_CHECK, true);

@@ -13,6 +13,7 @@
 		<module>digitalbanking-web</module>
 		<module>digitalbanking-service</module>
 		<module>digitalbanking-common</module>
+		<module>digitalbanking-scripts</module>
 	</modules>
 
 	<build>
