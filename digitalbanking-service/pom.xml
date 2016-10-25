@@ -265,7 +265,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>digitalbanking-web</finalName>
+		<finalName>digitalbanking-service</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
