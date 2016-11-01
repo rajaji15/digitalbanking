@@ -1,3 +1,13 @@
-I am the login page.
-
-I am now changing.....
+<div>
+	<div id="panel-login" class="panel panel-default">
+		<div class="panel-heading">Login</div>
+		<div class="panel-body">
+			<form ng-controller="loginCtrl">
+				<p class="nowrap error">{{User.error}}</p>
+				<input type="text" ng-model="User.username" />
+				<input type="password" ng-model="User.password" /> 
+				<button type="button" class="btn btn-lg" ng-click="login()">Login</button>
+			</form>
+		</div>
+	</div>
+</div>

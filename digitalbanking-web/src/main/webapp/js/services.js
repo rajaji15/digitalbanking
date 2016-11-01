@@ -5,15 +5,24 @@ var digitalbankingServices = angular.module('digitalbankingServices', [ 'ngResou
 
 digitalbankingServices.factory('LoginService',['$http','$location','$rootScope', function($http, $location, $rootScope) {
 	var service = {};
-	service.Login = function(username, password, tenant) {
-		return $http.post($rootScope.WEBURL + 'webapi/security/authenticate', {
-			username : username,
+	service.Login = function(username, password) {
+		return $http.post('webapi/security/authenticate', {
+			userName : username,
 			password : password
 		});
 	};
 	service.isLoggedIn = function() {		
 		$http.defaults.headers.common.authToken = sessionStorage.authToken;
-		return $http.post($rootScope.WEBURL + 'webapi/security/isLoggedIn');
+		return $http.post('webapi/security/isLoggedIn');
 	};
 	return service;
+}]);
+
+digitalbankingServices.factory('User', [function() {
+	var sdo = {
+		isLogged: false,
+		username: '',
+		password: ''
+	};
+	return sdo;
 }]);
